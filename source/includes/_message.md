@@ -73,7 +73,7 @@ Method | Route
 --------- | -------
 **POST** | `/message/receive_notify`
 
-### URL Parameters
+### Body Parameters
 
 Parameter | Type | Default | Description
 --------- | ------- | ----------- | -----------
