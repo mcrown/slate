@@ -81,6 +81,18 @@ to | string |  | Your FracTEL phone number.
 method | string | | Request method type to use when making the callback. Allowed values are `GET` _(querystring params)_, `POST` _(application/x-www-form-urlencoded)_ or `JSON` _(application/json)_.
 url | string | | Valid HTTP or HTTPS URL that will accept callback data when a message is received by your FracTEL phone number.
 
+### Callback Data
+
+Parameter | Type | Default | Description
+--------- | ------- | ----------- | -----------
+to | string | | Phone number of recipient.
+from | string | | Phone number of sender.
+message | string | | Contents of the message.
+
+<aside class="notice">
+  Callback URLs configured to receive data using a <code>GET</code> request can use template string replacements to control which query string parameters receive callback data values. For example, the following query string maps each callback value to parameters in the query string: <code>recipient={{to}}&sender={{from}}&message={{msg}}</code>
+</aside>
+
 ## Send
 
 > Example Request
@@ -169,3 +181,15 @@ Parameter | Type | Default | Description
 from | string |  | Your FracTEL phone number.
 method | string | | Request method type to use when making the callback. Allowed values are `GET` _(querystring params)_, `POST` _(application/x-www-form-urlencoded)_ or `JSON` _(application/json)_.
 url | string | | Valid HTTP or HTTPS URL that will accept callback data when a message is sent to your FracTEL phone number.
+
+### Callback Data
+
+Parameter | Type | Default | Description
+--------- | ------- | ----------- | -----------
+to | string | | Phone number of recipient.
+from | string | | Phone number of sender.
+message | string | | Contents of the message.
+
+<aside class="notice">
+  Callback URLs configured to receive data using a <code>GET</code> request can use template string replacements to control which query string parameters receive callback data values. For example, the following query string maps each callback value to parameters in the query string: <code>recipient={{to}}&sender={{from}}&message={{msg}}</code>
+</aside>
