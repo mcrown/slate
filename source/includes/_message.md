@@ -154,7 +154,6 @@ curl --request POST
 --header 'Accept: application/json'
 --header 'token: key'
 --data '{"from":"3212524595", "method":"POST", "url": "https%3A%2F%2Fhookb.in%2FvDkMOVB9" }'
-Request URL
 ```
 
 > Example Response
