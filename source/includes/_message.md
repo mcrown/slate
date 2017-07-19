@@ -152,7 +152,7 @@ deliverycode | int | | Delivery code of the message. Potential values are: <ul><
 
 
 <aside class="notice">
-  Message sending confirmation callback URLs receive JSON data via a <code>POST</code> request, but can also use template string replacements to receive callback data values in query string parameters. For example, the following query string maps each callback data value to parameters in the query string: <code>recipient={{to}}&sender={{from}}&message={{msg}}&deliverycode={{dc}}&deliverystate={{ds}}</code>
+  Message sending confirmation callback URLs receive JSON data via a <code>POST</code> request, but can also use template string replacements to receive callback data values in query string parameters. For example, the following query string maps each callback data value to parameters in the query string: <code>recipient={{to}}&sender={{from}}&message={{msg}}&code={{dc}}&state={{ds}}</code>
 </aside>
 
 ## Send Notify
