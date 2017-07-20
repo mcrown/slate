@@ -140,6 +140,21 @@ media_url | string | | Valid HTTP or HTTPS URL for media to send via MMS. We all
 confirmation_url | string | | Valid HTTP or HTTPS URL that will accept callback data after the message is sent.
 require_confirmation | string | | Only send message if confirmation is available.
 
+### Callback Data
+
+Parameter | Type | Default | Description
+--------- | ------- | ----------- | -----------
+to | string | | Phone number of recipient.
+from | string | | Phone number of sender.
+message | string | | Contents of the message.
+deliverystate | string | | Delivery state of the message. Potential values are `waiting`, `delivered` or  `not-delivered`.
+deliverycode | int | | Delivery code of the message. Potential values are: <ul><li>`000` - Message delivered to carrier</li><li>`100` - Message not delivered to carrier</li><li>`187` - Statistical spam detected</li><li>`188` - Keyword spam detected</li><li>`189` - Spam detected</li><li>`482` - Loop detected</li><li>`600` - Destination carrier could not accept messages</li><li>`610` - Message submission failed</li><li>`620` - Destination application error</li><li>`630` - Message not acknowledged</li><li>`720` - Invalid destination number</li><li>`740` - Invalid source number</li><li>`999` - Unknown error</li></ul>
+
+
+<aside class="notice">
+  Message sending confirmation callback URLs receive JSON data via a <code>POST</code> request, but can also use template string replacements to receive callback data values in query string parameters. For example, the following query string maps each callback data value to parameters in the query string: <code>recipient={{to}}&sender={{from}}&message={{msg}}&code={{dc}}&state={{ds}}</code>
+</aside>
+
 ## Send Notify
 
 > Example Request
