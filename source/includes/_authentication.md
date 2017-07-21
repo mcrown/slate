@@ -44,4 +44,8 @@ Parameter | Type | Default | Description
 --------- | ------- | ----------- | -----------
 username | string |  |FracTEL username.
 password | string | | FracTEL password.
-expires | integer | 3600 | Token time to live in seconds. The maximum allowed time is 24 hours.
+expires<br/>_optional_ | integer | 3600 | Token time to live in seconds. The maximum allowed time is 24 hours.
+
+<aside class="notice">
+API calls that use invalid or expired tokens will receive a response of `401 - Unauthorized`.
+</aside>
