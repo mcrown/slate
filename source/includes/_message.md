@@ -234,7 +234,7 @@ message | string | | Contents of the message.
 
 Callback URLs use the `POST` method and use token replacements to place callback data values in query string parameters. For example, the following partial query string maps each callback data value to parameters in the query string: <code>recipient={{to}}&sender={{from}}&message={{msg}}</code>
 
-### Receive Notify
+## Receive Notify
 
 > Example Request
 
