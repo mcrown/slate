@@ -5,7 +5,7 @@ language_tabs:
   - shell
 
 toc_footers:
-  - <a href='https://www.fractel.net'>Powered By FracTEL</a>
+  - <a href='https://www.fractel.net'>Powered By FracTEL &reg;</a>
 
 includes:
   - introduction

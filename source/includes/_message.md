@@ -41,7 +41,7 @@ Method | Route
 Parameter | Type | Default | Description
 --------- | ------- | ----------- | -----------
 to | string |  | The recipient's 10 digit phone number.
-from | string | | Your 10 digit FracTEL phone number.
+from | string | | Your 10 digit FracTEL &reg; phone number.
 message | string | | Contents of the SMS or MMS.
 media_url<br/>_optional_ | array[string] | | Valid HTTP or HTTPS URL(s) for media to send via MMS. See **Notes** for additional information.
 confirmation_url<br/>_optional_ | string | | Valid HTTP or HTTPS URL that will accept callback data after the message is sent. See **Notes** for additional information.
@@ -127,7 +127,7 @@ curl --request POST
 }
 ```
 
-Configure the callback URL to notify when a message is sent. Each FracTEL phone number can be configured to use its own callback URL for handling send notifications.
+Configure the callback URL to notify when a message is sent. Each FracTEL &reg; phone number can be configured to use its own callback URL for handling send notifications.
 
 ### HTTP Request
 
@@ -139,7 +139,7 @@ Method | Route
 
 Parameter | Type | Default | Description
 --------- | ------- | ----------- | -----------
-from | string |  | Your FracTEL phone number.
+from | string |  | Your FracTEL &reg; phone number.
 url | string | | Callback URL. See **Notes** for additional information.
 method | string | | Allowed values are `GET`,`POST`, or `JSON`. See **Notes** for additional information.
 
@@ -147,7 +147,7 @@ method | string | | Allowed values are `GET`,`POST`, or `JSON`. See **Notes** fo
 
 #### `url`
 
-This is a valid HTTP or HTTPS URL that will accept callback data when a message is sent from the FracTEL phone number specified in `from`.
+This is a valid HTTP or HTTPS URL that will accept callback data when a message is sent from the FracTEL &reg; phone number specified in `from`.
 
 #### `method`
 
@@ -202,7 +202,7 @@ Method | Route
 
 Parameter | Type | Default | Description
 --------- | ------- | ----------- | -----------
-to | string |  | Your FracTEL phone number.
+to | string |  | Your FracTEL &reg; phone number.
 type | string | | Message service routing type. Allowed values are `Device`, `Email`, `URL`, `Forward`, or `None`. See **Notes** for additional information.
 value | string | | Value of the chosen message routing type. Allows for a _Device ID_, _Email Address_, _URL_ or _Phone Number_ depending on the specified `type`. See **Notes** for additional information.
 
@@ -259,7 +259,7 @@ $ curl --request POST
 }
 ```
 
-Configure the callback URL to notify when a message is received. Each FracTEL phone number can be configured to use its own callback URL for handling receive notifications.
+Configure the callback URL to notify when a message is received. Each FracTEL &reg; phone number can be configured to use its own callback URL for handling receive notifications.
 
 ### HTTP Request
 
@@ -271,7 +271,7 @@ Method | Route
 
 Parameter | Type | Default | Description
 --------- | ------- | ----------- | -----------
-to | string |  | Your FracTEL phone number.
+to | string |  | Your FracTEL &reg; phone number.
 url | string | | Callback URL. See **Notes** for additional information.
 method | string | | Allowed values are `GET`,`POST`, or `JSON`. See **Notes** for additional information.
 
@@ -279,7 +279,7 @@ method | string | | Allowed values are `GET`,`POST`, or `JSON`. See **Notes** fo
 
 #### `url`
 
-This is a valid HTTP or HTTPS URL that will accept callback data when a message is sent to the FracTEL phone number specified in `from`.
+This is a valid HTTP or HTTPS URL that will accept callback data when a message is sent to the FracTEL &reg; phone number specified in `from`.
 
 #### `method`
 
