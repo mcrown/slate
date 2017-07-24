@@ -42,8 +42,8 @@ Method | Route
 
 Parameter | Type | Default | Description
 --------- | ------- | ----------- | -----------
-username | string |  |FracTEL username.
-password | string | | FracTEL password.
+username | string |  |FracTEL &reg; username.
+password | string | | FracTEL &reg; password.
 expires<br/>_optional_ | integer | 3600 | Token time to live in seconds. The maximum allowed time is 24 hours.
 
 <aside class="notice">
