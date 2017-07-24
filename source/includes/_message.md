@@ -24,7 +24,8 @@ $ curl --request POST
 ```json
 {
   "statusCode": 200,
-  "result": "SUCCESS"
+  "result": "SUCCESS",
+  "uid": "574330d1cdd7e1566b61b771ac72295f"
 }
 ```
 
