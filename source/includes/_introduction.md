@@ -9,3 +9,7 @@ The Fonestorm API is organized around [REST](http://en.wikipedia.org/wiki/Repres
 All URLs referenced in the documentation have the following base:
 
 `https://api.fonestorm.com/v2`
+
+## Dates and Times
+
+Representation of dates and times are in [Coordinated Universal Time](https://en.wikipedia.org/wiki/Coordinated_Universal_Time) (_UTC_). The Fonestorm API accepts and returns dates and times that are represented using [ISO 8601]() formats.
